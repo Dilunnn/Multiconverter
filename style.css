@@ -2,3 +2,12 @@ html {
   height: 100%;
   width: 100%;
 }
+body{
+
+}
+h1{
+  padding : 60px;
+  border-radius : 10px;
+  background-color : #ed333b;
+  color : white;
+}
