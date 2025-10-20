@@ -6,11 +6,68 @@
   <meta name="viewport" content="width=device-width">
   <title>Cool app</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
-  <h1>Multiconverter</h1>
+  <div id="titulo">
+     <h1>Multiconverter</h1>
+  </div>
+
+  <div id="coins">
+      <div>
+        <h2>Coins <i class="fa-solid fa-coins"></i></h2>
+        <label>Put the value</label> <br>
+        <input type="number" id="numbercoins"> <br>
+        <select id="selectcoins">
+          <option value="">Coins</option>
+          <option value="dolar">Dolar(USD)</option>
+          <option value="euro">Euro(EUR)</option>
+          <option value="real">Real(BRL)</option>
+        </select>
+        <br>
+        <button id="coins-button" onclick="coins()">Convert</button>
+      </div>
+    <div id="resultcoins">
+      
+    </div>
+  </div>
+
+  <div id="weight">
+      <h2>Weight <i class="fa-solid fa-weight-hanging"></i></h2>
+      <label>Put the value</label> <br>
+      <input type="number" id="number-weight"><br>
+      <select id="selectweight">
+        <option>Weight</option>
+        <option value="KG">Kilogram(KG)</option>
+        <option value="T">Ton(T)</option>
+        <option value="MG">Miligram(MG)</option>
+      </select>
+      <br>
+      <button id="weight-button" onclick="weight()">Convert</button>
+      <div id="resultweight"> </div>
+    </div>
+
+  <div id="temperature">
+      <h2>Temperature <i class="fa-solid fa-temperature-high"></i></h2>
+      <label>Put the value</label> <br>
+      <input type="number" id="temperature-weight"><br>
+      <select id="selecttemperature">
+        <option>Temperature</option>
+        <option>Fahrenheit</option>
+        <option>Kelvin</option>
+        <option>Celsius</option>
+      </select>
+      <br>
+      <button id="temperature-button" onclick="temperature()">Convert</button>
+      <div id="resulttemperature"> </div>
+    </div>
+
+  <footer div="footer">
+      <p>Created by Rodrigo Sabino and João Pedro</a></p>
+    <!-- Sabino? kakak -->
+  </footer>
 </body>
 
 </html>
